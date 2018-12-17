@@ -11,13 +11,27 @@ into logical parts, rather than simply committing everything in the working dire
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+You can add specific files to the staging area so that you logically separate files being committed. 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches allow you to split the changes in your code - if you'd like to try out something experimental and don't
+want to upset your main version is an example. Branches allow you to leave the main code in tact so it can be revered to if necessary.
+
 How do the diagrams help you visualize the branch structure?
+
+Diagrams show you the branch structure starting at the most recent commit and working backwards up through the parents. This lets you see
+each commit in the branch structure to identify where new branches started.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Merging branches combines the changes of both branches into a single branch. The merged branch has 2 parents (the nodes of the 2 merged branches),
+hence why it is represented in the diagram with 2 arrows.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Automatic merging does not always work if there is a conflict. You can then manually resolve the conflict by updating the code and then performing the merge.
+If there are no conflicts, then merge will successfully combine the commits.
